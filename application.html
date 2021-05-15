@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Nature Points, The Nature Points Calculator</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="js scripts/app.js" type="application/javascript"></script>
+    <style>
+      .container {
+        margin: 100px 50px;
+        font-size: 20px;
+        text-align: center;
+        }
+    </style>
+  </head>
+
+  <body onload="onLoad()">
+    <header>
+      <h1>Nature Points</h1>  
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="application.html">Calculator</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <br>  </br>
+      <br>  </br>
+      <img src="images/adventure-boardwalk-countryside-daylight.jpg" class="center">
+      <br>  </br>
+      <br>  </br>
+      <br>  </br>
+      <br>  </br>
+      <h2>The Nature Points Calculator</h2>
+      <p>Strive for 100 points a week!</p>
+      <h3>Select your activities for the week:</h3>
+    <!-- The code for the Nature Points calculator begins here -->
+    <div class="container">
+      <input type="checkbox" class="checks" value="20">Walk in a park<br>
+      <input type="checkbox" class="checks" value="15">Walk on a street<br>
+      <input type="checkbox" class="checks" value="20">Backyard gardening<br>
+      <input type="checkbox" class="checks" value="15">Tending to plants on porch<br>
+      <input type="checkbox" class="checks" value="20">Biking on a trail<br>
+      <input type="checkbox" class="checks" value="15">Biking on a road<br>
+      <input type="checkbox" class="checks" value="20">Swimming in a lake<br>
+      <input type="checkbox" class="checks" value="15">Swimming in backyard pool<br>
+      <input type="checkbox" class="checks" value="20">Yoga on a beach<br>
+      <input type="checkbox" class="checks" value="15">Yoga on patio<br>
+      <input type="checkbox" class="checks" value="10">other activity in nature<br>
+      <br><br>
+      <a href="#" onclick="getValue();return false;" style="margin-left: auto; margin-right: auto;">Calculate Nature Points</a>
+
+      <script>
+        function getValue() {
+
+            var checks = document.getElementsByClassName("checks");
+            var total = 0; 
+
+            for (i = 0; i < 11; i++ ) {
+
+              if ( checks[i].checked === true )  {
+                total += parseFloat(checks[i].value);
+              }
+               
+            }
+            window.alert(total);
+
+          }
+
+      </script>
+      </div>
+      <!-- The code for the Nature Points calculator ends here -->
+      <br>  </br>    
+      <br>  </br>
+    </main>
+    <footer>
+      Copyright 2020
+      <p id="timestamp"></p>
+    </footer>
+  </body>
+</html>

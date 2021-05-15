@@ -1,0 +1,70 @@
+a {
+  color: white;
+  background: black;
+  text-decoration: none;
+  display:block;
+  border-style:outset;
+  width:14ex;
+  text-align:center;
+}
+
+body {
+  background: #DCDCDC;
+  font-family: arial, "helvetica", "verdana", "sans-serif";
+  color: #329032;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+h1 {
+  font-size: 4em;
+  color: green;
+}
+
+h2 {
+  font-size: 3em;
+  color: green;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  color: green;
+  text-align: center;
+}
+
+header, footer {
+  text-align: center;
+  color: green;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+p {
+  padding: 7px;
+  text-align: center;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type:none;
+}
+  
+
